@@ -15,8 +15,6 @@ public class Loop1 {
            a++;
         }
         avg=(float)sum / (float) count;
-        System.out.println(sum);
-        System.out.println(count);
         System.out.println(avg);
     }
 }
