@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class loop1 {
+public class Loop1 {
     public static void main(String[] args) {
         int i, count=0, sum=0 ,a=1;
         double avg;
