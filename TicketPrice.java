@@ -61,6 +61,6 @@ public class TicketPrice {
         else{
             System.out.println("Hatalı veri girdiniz !");
         }
-        System.out.println("Toplam Tutar =" + price+"");
+        System.out.println("Toplam Tutar =" + price);
     }
 }
