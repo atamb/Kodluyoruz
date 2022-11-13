@@ -8,6 +8,6 @@ public class AreaOfCircle {
         System.out.print("Enter the radius: ");
         r=sc.nextDouble();
         area=3.14* r*r * a / 360;
-        System.out.println("Area of the piece: " + area);
+        System.out.println("Area of the piece: " + ara);
     }
 }
