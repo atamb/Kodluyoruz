@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import jva.util.Scanner;
 
 public class Loop1 {
     public static void main(String[] args) {
