@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void man(String[] args) {
+    public static void main(String[] args) {
         String std1, std2, std3;
         int std1phyexam, std2phyexam, std3phyexam, std1phyquiz, std2phyquiz, std3phyquiz, std1matexam, std2matexam, std3matexam, std1matquiz, std2matquiz, std3matquiz, std1chemexam, std2chemexam, std3chemexam, std1chemquiz, std2chemquiz, std3chemquiz;
         Scanner scan= new Scanner(System.in);
