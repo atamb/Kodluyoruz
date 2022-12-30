@@ -63,7 +63,7 @@ public class MineSweeper {
         Scanner input = new Scanner(System.in);
         int row, col, totalMove = rowNumber * colNumber- mineNumber;
         setFields();
-        System.out.println("==================>OYUNA HOŞGELDİN<==================");
+        System.out.println("==================>WELCOME TO THE GAME<==================");
         while (totalMove>0){
             System.out.print("Satır Giriniz : ");
             row=input.nextInt();
@@ -71,7 +71,7 @@ public class MineSweeper {
             col=input.nextInt();
 
             if((row<0 || row>=rowNumber) || (col<0 || col>=colNumber)){
-                System.out.println("==================>Hatalı Hamle<==================");
+                System.out.println("==================>WRONG MOVE<==================");
                 continue;
             }
             if(fieldHidden[row][col] == "*"){
@@ -80,7 +80,7 @@ public class MineSweeper {
                 break;
             }else{
                 if(fieldVisible[row][col] != "-"){
-                    System.out.println("==================>Bu Hamleyi Yaptın<==================");
+                    System.out.println("==================>YOU DID THIS MOVE<==================");
                 }else {
                     int counter = 0;
                     if(fieldHidden[row][col] != "*"){
@@ -117,7 +117,7 @@ public class MineSweeper {
             getVisibleField();
         }
         if (totalMove==0){
-            System.out.println("==================>OYUNU KAZANDIN<==================");
+            System.out.println("==================>YOU WIN<==================");
         }
         input.close();
     }
@@ -125,9 +125,9 @@ public class MineSweeper {
     public static void main(String[] args) {
         int row, col;
         try(var input = new Scanner(System.in)){
-            System.out.println("Satır sayısını girin: ");
+            System.out.println("Enter the row number: ");
             row = input.nextInt();
-            System.out.println("Sütun sayısını girin: ");
+            System.out.println("Enter the column number: ");
             col = input.nextInt();
             MineSweeper mine = new MineSweeper(row, col);
             mine.run();
